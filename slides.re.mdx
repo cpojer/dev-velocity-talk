@@ -1,0 +1,898 @@
+export { Components } from './Components';
+export { Themes } from './Themes';
+export { Transitions } from './Transitions';
+
+--
+
+<Stack
+  center
+  stretch
+  style={{
+    imageRendering: 'pixelated',
+    inset: 0,
+    overflow: 'hidden',
+    position: 'absolute',
+    zIndex: 0,
+    zoom: 0.63,
+  }}
+>
+  <Video
+    src="/AC.mp4"
+    style={{
+      transform: 'translateY(-7%)',
+    }}
+  />
+</Stack>
+<Stack
+  center
+  selfCenter
+  stretch
+  style={{
+    width: '78.5%',
+    zIndex: 1,
+  }}
+  vertical
+>
+  <TitleBox
+    children={
+      <h1 style={{ marginBottom: 0 }}>
+        Unlocking Front-End Development Velocity
+      </h1>
+    }
+  />
+  <TitleBox
+    children={
+      <>
+        by Christoph Nakazawa{' '}
+        <a href="https://cpojer.net" style={{ textDecoration: 'none' }}>
+          @cpojer
+        </a>
+      </>
+    }
+    style={{
+      alignSelf: 'end',
+      color: '#000',
+      marginTop: 20,
+      padding: '12px 20px',
+    }}
+  />
+  <TitleBox
+    children={
+      <a
+        href="https://dev-velocity.nakazawa.dev/"
+        style={{ textDecoration: 'none' }}
+      >
+        dev-velocity.nakazawa.dev
+      </a>
+    }
+    style={{
+      alignSelf: 'end',
+      marginTop: 20,
+      padding: '12px 20px',
+    }}
+  />
+</Stack>
+
+---
+
+image: Cover.jpg
+
+--
+
+<Logo />
+
+# Nakazawa Tech KK
+
+---
+
+image: CoverEmpty.jpg
+transition: none
+
+--
+
+# React Native
+
+<Center>
+  <Video
+    src="/ReactNative.mp4"
+    style={{
+      marginTop: -80,
+      borderRadius: 20,
+      width: '28%',
+    }}
+  />
+</Center>
+
+---
+
+image: CoverEmpty.jpg
+transition: none
+
+--
+
+# Jest & JavaScript Infra
+
+<Center>
+  <Video
+    src="/Jest.mp4"
+    style={{
+      marginTop: -60,
+      marginLeft: 10,
+      borderRadius: 20,
+      width: '45%',
+    }}
+  />
+</Center>
+
+---
+
+image: CoverEmpty.jpg
+theme: dark
+transition: leaveOnly
+
+--
+
+# Nakazawa Tech KK
+
+<Center>
+  <div
+    style={{
+      color: '#fff',
+      height: '50%',
+      width: '40%',
+    }}
+  >
+    Work with us!
+
+    - [nakazawa.dev](https://nakazawa.dev)
+
+    - [christoph@nakazawa.dev](mailto:christoph@nakazawa.dev)
+
+  </div>
+</Center>
+
+---
+
+theme: dark
+
+--
+
+<Center>
+
+# Why focus on D<Lowercase>ev</Lowercase>X?
+
+</Center>
+
+---
+
+# Development Cycles
+
+<Center>
+  <img src="/DevXLoop2.png" width="80%" />
+</Center>
+
+---
+
+transition: none
+
+--
+
+# Development Cycles
+
+<Center>
+  <img src="/DevXLoop1.png" width="80%" />
+</Center>
+
+---
+
+transition: none
+
+--
+
+# Development Cycles
+
+<Center>
+  <img src="/DevXLoop.png" width="80%" />
+</Center>
+
+---
+
+transition: leaveOnly
+
+--
+
+# Development Cycles
+
+<Center>
+  <img src="/DevXLoop4.png" width="80%" />
+</Center>
+
+---
+
+# D<Lowercase>ev</Lowercase>X Issues at Big Tech
+
+- Development cycles become slow due to scale (code, people, products)
+- Tools and infrastructure break down
+- Easy to become complacent
+
+  <Highlight>→</Highlight> Product quality goes down
+
+  <Highlight>→</Highlight> Product launches get delayed
+
+  <Highlight>→</Highlight> Business outcomes will be worse
+
+---
+
+# How to solve D<Lowercase>ev</Lowercase>X at Big Tech
+
+- Focus on the User
+- Incremental Migrations
+- Maximize Option Value
+- DevX Metrics
+
+  <Highlight>→</Highlight> Requires out-of-the box thinking far into the future
+
+  <Highlight>→</Highlight> Invest in DevX and Dev Productivity teams or organizations
+
+---
+
+# Metrics
+
+- **Measure Everything:** Measure organizations with qualitative and quantitative metrics
+- **Instrument all tooling:** install times, startup times, runtime
+- **Timeline:** Define metrics for velocity to capture the inner and outer loop
+- **Track Errors:** Capture when developers run into crashes
+- **"Sad User" Metric:** Number of people who have a bad experience with your tool
+
+---
+
+# Example: React Native Setup
+
+- Install native toolchains (XCode, gcc etc.)
+- Install and setup iOS simulator and Android emulators
+- Install JavaScript, iOS and Android package managers, build tools and toolchains
+- Install JavaScript, iOS and Android dependencies
+- Build your app
+
+  <Highlight>→</Highlight> Takes ~2-4 hours.
+
+---
+
+# Dev Setup Time
+
+<Center>
+  <img src="/SetupTime2.png" width="80%" />
+</Center>
+
+---
+
+transition: none
+
+--
+
+# Dev Setup Time
+
+<Center>
+  <img src="/SetupTime1.png" width="80%" />
+</Center>
+
+---
+
+transition: leaveOnly
+
+--
+
+# Dev Setup Time
+
+<Center>
+  <img src="/SetupTime.png" width="80%" />
+</Center>
+
+---
+
+# Remote Development
+
+- Request a remote server within seconds
+- Repository is already set up with your configuration
+- Application and JavaScript bundler are already running
+- Most used JavaScript bundles are pre-built ahead of time
+- Request a new server for each feature
+
+  <Highlight>→</Highlight> Setup time reduction from 2-4 hours to 10 seconds
+
+  <Highlight>→</Highlight> Daily time reduction from ~30-60 minutes to 10 seconds
+
+---
+
+# Example: Bundler Speed
+
+- Took 20 minutes to bundle JavaScript once per day
+- "Hot reloading" took two minutes
+
+  <Highlight>→</Highlight> People didn't believe it could be improved
+
+**Solution**
+
+- Proposed and executed a project to switch bundlers
+
+  <Highlight>→</Highlight> Reduced 20 minutes (1200 seconds) to 6 seconds.
+
+---
+
+theme: dark
+transition: leaveFade
+
+--
+
+<Center>
+
+# <span className="colorful" style={{ filter: 'hue-rotate(90deg)', }}>Athena Crisis</span>
+
+</Center>
+
+---
+
+theme: dark
+transition: opacity
+
+--
+
+<Center>
+
+# The <span className="colorful" style={{ filter: 'hue-rotate(90deg)', }}>Athena Crisis</span> Stack
+
+</Center>
+
+---
+
+<CenteredText
+  style={{
+    fontSize: '2em',
+  }}
+>
+  Vite, pnpm, TypeScript, React, Relay, Emotion, Prisma, GraphQL,
+  graphql-pothos, socket.io
+</CenteredText>
+
+---
+
+<Center>
+
+<h1 style={{ paddingRight: 10 }}>
+  <i>Demo</i>
+</h1>
+
+</Center>
+
+---
+
+# Development Environment
+
+<Stack nowrap>
+  <div>
+
+    - Spend time customizing your environment
+    - Create shortcuts
+    - [Fish Shell](https://fishshell.com/), [Bat](https://github.com/sharkdp/bat),
+    [delta](https://github.com/dandavison/delta)
+    - Quickstart: [`@cpojer/dotfiles`](https://github.com/cpojer/dotfiles)
+
+  </div>
+  <img src="/Shortcuts2.png" width="60%" />
+</Stack>
+
+---
+
+transition: none
+
+--
+
+# Development Environment
+
+<Stack nowrap>
+  <div>
+
+    - Spend time customizing your environment
+    - Create shortcuts
+    - [Fish Shell](https://fishshell.com/), [Bat](https://github.com/sharkdp/bat),
+    [delta](https://github.com/dandavison/delta)
+    - Quickstart: [`@cpojer/dotfiles`](https://github.com/cpojer/dotfiles)
+
+  </div>
+  <img src="/Shortcuts1.png" width="60%" />
+</Stack>
+
+---
+
+transition: leaveOnly
+
+--
+
+# Development Environment
+
+<Stack nowrap>
+  <div>
+
+    - Spend time customizing your environment
+    - Create shortcuts
+    - [Fish Shell](https://fishshell.com/), [Bat](https://github.com/sharkdp/bat),
+    [delta](https://github.com/dandavison/delta)
+    - Quickstart: [`@cpojer/dotfiles`](https://github.com/cpojer/dotfiles)
+
+  </div>
+  <img src="/delta.png" width="60%" />
+</Stack>
+
+---
+
+# VS Code Setup
+
+- [**Error Lens**](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens): Optimize your editor to get signal as fast as possible
+
+<img
+  src="/ErrorLens.png"
+  width="90%"
+  style={{ borderRadius: 20, margin: '0 auto' }}
+/>
+
+- [**All Autocomplete**](https://marketplace.visualstudio.com/items?itemName=Atishay-Jain.All-Autocomplete): Receive auto-complete suggestions from all open files
+
+<img
+  src="/AllAutocomplete.png"
+  width="60%"
+  style={{ borderRadius: 20, margin: '0 auto' }}
+/>
+
+---
+
+# Dep Management with pnpm
+
+**Fast and Scalable:** Parallelized Installs
+
+<Stack gap={32} nowrap>
+  <div style={{ flex: 1, textAlign: 'center', textTransform: 'uppercase' }}>
+    Other package managers
+  </div>
+  <div style={{ flex: 1, textAlign: 'center', textTransform: 'uppercase' }}>
+    pnpm
+  </div>
+</Stack>
+<Stack alignNormal>
+  <img
+    src="/pnpm2.svg"
+    width="45%"
+    style={{ borderRadius: 20, margin: '0 auto' }}
+  />
+  <img
+    src="/pnpm1.svg"
+    width="45%"
+    style={{ borderRadius: 20, margin: '0 auto' }}
+  />
+</Stack>
+
+---
+
+transition: none
+
+--
+
+# Dep Management with pnpm
+
+**Space Efficient:** No package duplication _across projects_
+
+<img
+  src="/pnpm3.svg"
+  width="70%"
+  style={{ borderRadius: 20, margin: '0 auto' }}
+/>
+
+---
+
+transition: leaveOnly
+
+--
+
+# Dep Management with pnpm
+
+**Feature-rich:** Covers all package management use-cases
+
+<table className="comparison">
+  <thead style={{ backgroundColor: '' }}>
+    <tr>
+      <th>Feature</th>
+      <th>pnpm</th>
+      <th>Yarn</th>
+      <th>npm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Workspace support</td>
+      <td>✔️</td>
+      <td>✔️</td>
+      <td>✔️</td>
+    </tr>
+    <tr>
+      <td
+        children={
+          <>
+            Isolated <code>node_modules</code>
+          </>
+        }
+      />
+      <td>✔️ - The default</td>
+      <td>✔️</td>
+      <td>✔️</td>
+    </tr>
+    <tr>
+      <td
+        children={
+          <>
+            Hoisted <code>node_modules</code>
+          </>
+        }
+      />
+      <td>✔️</td>
+      <td>✔️</td>
+      <td>✔️ - The default</td>
+    </tr>
+    <tr>
+      <td>Zero-Installs</td>
+      <td>❌</td>
+      <td>✔️</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Patching dependencies</td>
+      <td>✔️</td>
+      <td>✔️</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Managing Node.js versions</td>
+      <td>✔️</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Has a lockfile</td>
+      <td>
+        ✔️ - <code>pnpm-lock.yaml</code>
+      </td>
+      <td>
+        ✔️ - <code>yarn.lock</code>
+      </td>
+      <td>
+        ✔️ - <code>package-lock.json</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Overrides support</td>
+      <td>✔️</td>
+      <td>✔️ - Via resolutions</td>
+      <td>✔️</td>
+    </tr>
+    <tr>
+      <td>Content-addressable storage</td>
+      <td>✔️</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Dynamic package execution</td>
+      <td>
+        ✔️ - Via <code>pnpm dlx</code>
+      </td>
+      <td>
+        ✔️ - Via <code>yarn dlx</code>
+      </td>
+      <td>
+        ✔️ - Via <code>npx</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Side-effects cache</td>
+      <td>✔️</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+# Update dependencies early, and often
+
+- Never spend too much time updating dependencies
+- Isolate issues with a single dependency more easily
+- Receive the latest security fixes
+- Have access to the latest features
+
+---
+
+# Vite
+
+<Stack nowrap>
+  <div>
+  
+  - Bundling done Right
+  - Extremely Fast and Scalable
+  - Reliable
+  
+  </div>
+  
+  <img src="/ViteLogo.png" width="35%" />
+
+</Stack>
+
+---
+
+transition: leaveOnly
+
+--
+
+# Vite
+
+<Stack gap={32} nowrap>
+  <div style={{ flex: 1, textAlign: 'center', textTransform: 'uppercase' }}>
+    Legacy Bundlers
+  </div>
+  <div style={{ flex: 1, textAlign: 'center', textTransform: 'uppercase' }}>
+    Vite
+  </div>
+</Stack>
+<Stack gap={32} nowrap>
+  <ViteSVG2 />
+  <ViteSVG1 />
+</Stack>
+
+---
+
+# <Lowercase>`@nkzw/eslint-config`</Lowercase>
+
+`npm install --save-dev @nkzw/eslint-config`
+
+**Principles**
+
+- Error, Never Warn
+- Strict, Consistent Code Style
+- Prevent Bugs
+- Fast
+- Don't Get in the Way
+
+---
+
+# Reduce Cognitive Overhead
+
+<Stack nowrap style={{fontSize: '0.85em'}}>
+  <div>
+```ts
+const actionResponse = {
+  from,
+  hasCounterAttack: !!counter,
+  playerA: a.player,
+  playerB: b.player,
+  to,
+  type: 'AttackUnit',
+  unitA: playerUnit,
+  unitB: opponentUnit,
+}
+```
+  </div>
+  <div>
+```ts
+const actionResponse = {
+  playerB: c.player,
+  from,
+  unitA: opponentUnit,
+  hasCounterAttack: false,
+  type: 'AttackUnit',
+  playerA: a.player,
+  unitB: playerUnit,
+  to,
+}
+```
+  </div>
+</Stack>
+
+---
+
+transition: leaveOnly
+
+--
+
+# Reduce Cognitive Overhead
+
+<Stack nowrap style={{fontSize: '0.85em'}}>
+  <div>
+```ts
+const actionResponse = {
+  from,
+  hasCounterAttack: !!counter,
+  playerA: a.player,
+  playerB: b.player,
+  to,
+  type: 'AttackUnit',
+  unitA: playerUnit,
+  unitB: opponentUnit,
+}
+```
+  </div>
+  <div>
+```ts
+const actionResponse = {
+  from,
+  hasCounterAttack: false,
+  playerA: a.player,
+  playerB: c.player,
+  to,
+  type: 'AttackUnit',
+  unitA: opponentUnit,
+  unitB: playerUnit,
+}
+```
+  </div>
+</Stack>
+
+---
+
+transition: leaveOnly
+
+--
+
+# Reduce Cognitive Overhead
+
+<Center>
+<Video
+  src="/SortImports.mp4"
+  style={{
+    borderRadius: 10,
+    boxShadow: 'rgb(0, 0, 0, 0.3) 0px 2px 3px',
+    width: '50%',
+}}
+/>
+
+</Center>
+
+---
+
+# Parallelize Aggressively
+
+- Type checking, linting and testing is often done serially
+- Use `npm-run-all` to parallelize. In your package.json, change:
+
+```json
+"scripts": {
+  "test": "npm-run-all --parallel tsc lint jest"
+}
+```
+
+- Use [Nx](https://nx.dev/), [Turborepo](https://turbo.build/) or [Bazel](https://bazel.build/) with remote caching and intelligent dependency tracking for large projects.
+
+---
+
+transition: leaveOnly
+
+--
+
+# Use ECMAScript Modules
+
+**Requirements**
+
+- Auto save while typing
+- Use native ECMAScript Modules and remove TypeScript types fast
+- Fast Refresh on the client
+- Immediately restart all servers when a file changes
+
+---
+
+transition: leaveOnly
+
+--
+
+# Use ECMAScript Modules
+
+- Use `ts-node` with `swc`. In your `tsconfig.json`:
+
+```json {2}
+"ts-node": {
+    "transpileOnly": true,
+    "transpiler": "ts-node/transpilers/swc",
+    "files": true,
+    "compilerOptions": {
+      "module": "esnext",
+      "isolatedModules": false
+    }
+}
+```
+
+---
+
+transition: leaveOnly
+
+--
+
+# Use ECMAScript Modules
+
+Create `script.tsx`, run `chmod +x script.ts`, execute via `./script.tsx`:
+
+<div style={{fontSize: '0.65em'}}>
+
+```js
+#!/usr/bin/env node --experimental-specifier-resolution=node --loader ts-node/esm
+
+console.log('Your code goes here.');
+```
+
+</div>
+
+Prefix with `nodemon` to restart anytime a file changes:
+
+<div style={{fontSize: '0.65em'}}>
+```js
+#!/usr/bin/env node_modules/.bin/nodemon -q -I --exec node --experimental-…
+````
+
+</div>
+
+---
+
+# A Template to get started
+
+**GitHub**
+
+- [github.com/cpojer/vite-ts-react-tailwind-template](https://github.com/cpojer/vite-ts-react-tailwind-template)
+- [github.com/cpojer/dotfiles](https://github.com/cpojer/dotfiles)
+
+**Blog Posts**
+
+- [cpojer.net/posts/fastest-frontend-tooling-in-2022](https://cpojer.net/posts/fastest-frontend-tooling-in-2022)
+- [cpojer.net/posts/the-perfect-development-environment](https://cpojer.net/posts/the-perfect-development-environment)
+
+---
+
+theme: dark
+
+--
+
+<Center>
+
+# One More Thing
+
+</Center>
+
+---
+
+# R<Lowercase>e</Lowercase>MDX
+
+- This talk was built using the same technology stack!
+- **Beautiful React & MDX Presentations:** [github.com/cpojer/remdx](https://github.com/cpojer/remdx)
+- **Source:** [github.com/nkzw-tech/dev-velocity-talk](https://github.com/nkzw-tech/dev-velocity-talk)
+
+---
+
+image: CoverEmpty.jpg
+theme: dark
+--
+
+<Logo />
+
+# Nakazawa Tech KK
+
+<Center>
+  <div
+    style={{
+      color: '#fff',
+      height: '50%',
+      width: '40%',
+    }}
+  >
+
+    Work with us!
+
+    - [nakazawa.dev](https://nakazawa.dev)
+
+    - [christoph@nakazawa.dev](mailto:christoph@nakazawa.dev)
+
+  </div>
+</Center>
